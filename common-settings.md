@@ -5,7 +5,7 @@ sudo vi /etc/ssh/sshd_config
 -- PublickeyAuthentication yes
 sudo systemctl restart sshd
 ```
-ssh key config
+  ssh key config
 ```
 mkdir ~/.ssh
 vi ~/.ssh/authorized_keys
