@@ -17,3 +17,6 @@ sudo subscription-manager register
 sudo subscription-manager attach --pool <pool-id>
 ```
 3. yum update
+1. other packages
+- wget
+- 
