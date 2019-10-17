@@ -20,6 +20,13 @@ sudo subscription-manager repos --enable=rhel-7-extras-rpms
 sudo subscription-manager repos --enable=rhel-7-optional-rpms
 ```
 3. yum update
+1. sudo no password
+```
+sudo visudo
+---add line
+hoge ALL=NOPASSWD: ALL
+---
+```
 1. other packages
 - wget
 - 
