@@ -33,4 +33,6 @@ hoge ALL=NOPASSWD: ALL
 - wget
 - tmux
 - vim
+- tree
+
 
