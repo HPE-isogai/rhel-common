@@ -27,6 +27,10 @@ sudo visudo
 hoge ALL=NOPASSWD: ALL
 ---
 ```
+1. set vi as a default command  
+`set -o vi`  
 1. other packages
 - wget
-- 
+- tmux
+- vim
+
