@@ -27,7 +27,7 @@ sudo visudo
 hoge ALL=NOPASSWD: ALL
 ---
 ```
-1. set vi as a default command  
+1. set vi as a default keymap  
 `set -o vi`  
 1. other packages
 - wget
