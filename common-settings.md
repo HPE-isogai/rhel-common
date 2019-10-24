@@ -15,8 +15,8 @@ vi ~/.ssh/authorized_keys
 ```
 sudo subscription-manager register
 sudo subscription-manager attach --pool <pool-id>
-sudo subscription-manager repos --enable=rhel-7-servers-rpms
-sudo subscription-manager repos --enable=rhel-7-extras-rpms
+sudo subscription-manager repos --enable=rhel-7-server-rpms
+sudo subscription-manager repos --enable=rhel-7-extra-rpms
 sudo subscription-manager repos --enable=rhel-7-optional-rpms
 ```
 3. yum update
