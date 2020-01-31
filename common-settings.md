@@ -20,13 +20,14 @@ sudo subscription-manager repos --enable=rhel-7-extra-rpms
 sudo subscription-manager repos --enable=rhel-7-optional-rpms
 ```
 1. (Optional) epel repo
-wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-sudo rpm -vh epel-release-latest-7.noarch.rpm
-sudo yum install epel-release
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm  
+sudo rpm -vh epel-release-latest-7.noarch.rpm  
+sudo yum install epel-release  
 
 3. yum update
 1. sudo no password
 ```
+usermod -aG wheel sampleuser　
 sudo visudo
 ---add line
 hoge ALL=NOPASSWD: ALL
