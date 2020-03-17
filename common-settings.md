@@ -40,5 +40,6 @@ hoge ALL=NOPASSWD: ALL
 - tmux
 - vim
 - tree
+- bind-utils
 
 
