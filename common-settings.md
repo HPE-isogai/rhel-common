@@ -42,4 +42,9 @@ hoge ALL=NOPASSWD: ALL
 - tree
 - bind-utils
 
+1. modify sudoers file for password less login
+```
+/etc/sudoers
+tom ALL=(ALL) NOPASSWD:ALL
+```
 
