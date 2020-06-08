@@ -41,6 +41,7 @@ hoge ALL=NOPASSWD: ALL
 - vim
 - tree
 - bind-utils
+- net-tools
 
 1. modify sudoers file for password less login
 ```
