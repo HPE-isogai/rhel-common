@@ -42,6 +42,7 @@ hoge ALL=NOPASSWD: ALL
 - tree
 - bind-utils
 - net-tools
+- lsof
 
 1. modify sudoers file for password less login
 ```
