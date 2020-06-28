@@ -36,13 +36,10 @@ hoge ALL=NOPASSWD: ALL
 1. set vi as a default keymap  
 `set -o vi`  
 1. other packages
-- wget
-- tmux
-- vim
-- tree
-- bind-utils
-- net-tools
-- lsof
+
+```
+yum install -y wget tmux vim tree bind-utils net-tools lsof ncdu htop tldr jq fd
+```
 
 1. modify sudoers file for password less login
 ```
