@@ -38,7 +38,7 @@ hoge ALL=NOPASSWD: ALL
 1. other packages
 
 ```
-yum install -y wget tmux vim tree bind-utils net-tools lsof ncdu htop tldr jq fd
+yum install -y wget tmux vim tree bind-utils net-tools lsof ncdu htop tldr jq fd git
 ```
 
 1. modify sudoers file for password less login
