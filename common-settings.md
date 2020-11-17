@@ -30,7 +30,7 @@ sudo yum install epel-release
 usermod -aG wheel sampleuser　
 sudo visudo
 ---add line
-hoge ALL=NOPASSWD: ALL
+tom ALL=(ALL) NOPASSWD:ALL
 ---
 ```
 1. set vi as a default keymap  
@@ -39,11 +39,5 @@ hoge ALL=NOPASSWD: ALL
 
 ```
 yum install -y wget tmux vim tree bind-utils net-tools lsof ncdu htop tldr jq fd git
-```
-
-1. modify sudoers file for password less login
-```
-/etc/sudoers
-tom ALL=(ALL) NOPASSWD:ALL
 ```
 
