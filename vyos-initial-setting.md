@@ -3,6 +3,7 @@
 - Set VM Network : OVF NICs
 
 ## Set IP
+```
 set interfaces ethernet eht0 address '10.0.0.1/24'
 set interfaces ethernet eht0 address '15.210.188.100/22'
 
@@ -10,23 +11,28 @@ set service ssh port '22'
 set system ntp server '16/110.135.123'
 
 set protocols static route 0.0.0.0/0 next-hop 15.210.188.1 distance '1'
-
+```
 ## NAT
+```
 set nat source rule 100 outbound-interface 'eth1'
 set nat source rule 100 source address '10.0.0.0/16'
 set nat source rule 100 translation address masquerade
+```
 
 ## DNS
+```
 vyos@vyos# set service dns forwarding cache-size '0'
 vyos@vyos# set service dns forwarding listen-on 'eth0'
 vyos@vyos# set service dns forwarding name-server '15.227.128.52'
 vyos@vyos# set service dns forwarding name-server '15.243.160.52'
+```
 
 ## Transparent Proxy
 ### set environment properly as your environment
-
+```
 sudo mkdir /var/log/squid3
 set service webproxy listen-address 10.0.255.254 #Add transparent proxy
+```
 
 ```
 vyos@vyos:~$ cat /etc/squid3/squid.conf
@@ -71,7 +77,7 @@ cache_peer 16.242.55.11 parent 8080 0 no-query #Add This line for
 
 forwarded_for off
 ```
-
+```
 vyos@vyos# set service webproxy cache-size '500'
 [edit]
 vyos@vyos# set service webproxy mem-cache-size '250'
@@ -92,9 +98,11 @@ Restarting Squid HTTP Proxy 3.x: squid3.
 
 [edit]
 vyos@vyos# save
-
+```
 
 ## save
+```
 commit
 save
+```
 
