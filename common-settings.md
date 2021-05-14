@@ -40,4 +40,9 @@ tom ALL=(ALL) NOPASSWD:ALL
 ```
 yum install -y wget tmux vim tree bind-utils net-tools lsof ncdu htop tldr jq fd git
 ```
+1. EPEL Repositry
+Add EPEL Repositry
+`sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm`  
+
+
 
